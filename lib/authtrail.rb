@@ -31,7 +31,8 @@ module AuthTrail
       user: user,
       ip: request.remote_ip,
       user_agent: request.user_agent,
-      referrer: request.referrer
+      referrer: request.referrer,
+      url: request.original_url
     }
 
     if request.params[:controller]
